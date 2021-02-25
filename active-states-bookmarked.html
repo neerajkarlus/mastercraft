@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Frontend Mentor | Crowdfunding product page</title>
+  <style>
+    body {
+        background-color: rgba(102, 102, 102, 0.473);
+        min-height: 100vh;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    .bg-img {
+      /* The image used */
+      background-image: url("./images/image-hero-desktop.jpg");
+    
+      min-height: 380px;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      /* Needed to position the navbar */
+      /*     */
+    }
+    
+    /* Position the navbar container inside the image */
+    .container {
+      position: absolute;
+      margin: 20px;
+      width: auto;
+    }
+    
+    /* The navbar */
+    .topnav {
+      /* overflow: hidden; */
+  background-color: rgba(51, 51, 51, 0);
+      }
+    
+    /* Navbar links */
+    .topnav a {
+      float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: rgba(224, 218, 218, 0);
+      color: black;
+      
+    }
+    .topnav-right {
+  float: right;
+}
+/* common styling */
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.justify-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    color: black;
+    height: 100%;
+    border: 3px solid #b9b7b75e;
+    padding: 10px;
+   
+}
+
+.box * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+  margin-top: -40px;
+}
+.icon {
+    margin-top: -40px;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #3ea041;
+  border: none;
+  border-radius: 25px;
+  
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.component
+{
+    display: flex;
+    width: 100%;
+}
+.btn1, .btn2
+{
+    width:100%
+} 
+    </style>
+</head>
+<body>
+    <div class="bg-img">
+        <div class="container">
+          <div class="topnav">
+            <a href="#Crowdfund">Crowdfund</a>
+            <div class="topnav-right" >
+            <a href="#About">About</a>
+            <a href="#Discover">Discover</a>
+            <a href="#GetStarted">GetStarted</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="justify-center">
+      <div>
+        <div class="box box1">
+                <div class="icon"><img src="./images/logo-mastercraft.svg" alt="logo Mastercraft"></div>
+                <h2>Mastercraft Bamboo Monitor Riser</h2>
+                <h3>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</h3>
+                <div class="component">
+                    <div class="btn1 float-left" >
+                        <button class="button">Back this project</button>
+                    </div>
+                    <div class="btn2 float-right">
+                        <button class="button float-right" ><i class="fa fa-bookmark"></i>bookmark</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                  <div>
+                    <h1>$89.914</h1>
+                    <h3>of @100,000 backed</h3>              
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>
